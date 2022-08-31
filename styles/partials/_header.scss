@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    h5 {
+      font-family: 'Inter', sans-serif;
+      font-weight: $bold;  
+      font-size: 24px;
+    }
+  }
+
+  ul.navigation {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      
+      25% {
+        transform: translateY(-5px);
+      }
+
+      75% {
+        transform: translateY(5px);
+      }
+    }
+
+    li {
+      &:hover {
+        animation: bounce 1s infinite ease-in-out;
+      }
+
+      a {
+        font-family: 'Sora', sans-serif;
+        font-size: 20px;
+        cursor: pointer;  
+      }
+    }
+
+
+  }
+
+  button {
+    @include button(black, white)
+  }
+}

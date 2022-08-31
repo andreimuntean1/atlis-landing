@@ -1,0 +1,26 @@
+@import './partials/utils/reset';
+@import './partials/utils/mixins';
+@import './partials/utils/variables';
+
+@import './partials/fonts/inter';
+@import './partials/fonts/poppins';
+@import './partials/fonts/sora';
+@import './partials/fonts/font-sizes';
+
+@import './partials/index';
+@import './partials/careers';
+@import './partials/header';
+@import './partials/hero';
+@import './partials/main-card';
+@import './partials/cards';
+@import './partials/profile-card';
+@import './partials/contact';
+@import './partials/footer';
+
+@import './partials/mobile/index';
+@import './partials/mobile/header';
+@import './partials/mobile/hero';
+@import './partials/mobile/main-card';
+@import './partials/mobile/cards';
+@import './partials/mobile/profile-card';
+@import './partials/mobile/contact';

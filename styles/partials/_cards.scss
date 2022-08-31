@@ -1,0 +1,56 @@
+.cards {
+  margin-top: 12em;
+
+  h2 {
+    @include heading;
+    max-width: $max-width;
+
+    span {
+      @include colored($gray);
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: -70px;
+
+    .group {
+      display: flex;
+      gap: 30px;
+      
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 40px;
+        border-radius: 50px;
+        background: $light-gray;
+
+        &:last-of-type {
+          justify-content: center;
+        }
+
+        h2 {
+          @include heading;
+          
+          &.threads {
+            @include colored(linear-gradient(180deg, #F93B3B 0%, #9C06C2 100%));
+          }
+
+          &.communities {
+            @include colored(linear-gradient(180deg, #3B92F9 0%, #060DC2 100%));
+          }
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@media screen and (max-width: 1280px) {
+  .main-card {
+    flex-direction: column;
+    gap: 70px;
+    // padding: 50px;
+
+    .text {
+      .heading {
+        text-align: center;
+
+        img {
+          display: none;  
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-card {
+    background: none;
+    flex-direction: column-reverse;
+    padding: 30px 0;
+  }
+}

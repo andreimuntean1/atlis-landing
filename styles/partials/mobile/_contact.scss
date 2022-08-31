@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px) {
+  .contact {
+    form {
+      input{
+        padding: 10px 8px;
+        
+        &::placeholder {
+          font-size: 16px;
+        }
+
+        &[type=submit] {
+          font-size: 18px;
+        }
+      }
+      
+      textarea{
+        padding: 10px 8px;
+
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.profile-showcase {
+  margin-top: 12em;
+
+  h2 {
+    @include heading;
+    max-width: 550px;
+
+    span {
+      @include colored($gray);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-left: -70px;
+  }
+}

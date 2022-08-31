@@ -1,0 +1,46 @@
+.main-card {
+  background: $light-gray;
+  margin-top: 10em;
+  border-radius: 40px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .text {
+    max-width:$max-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+
+    .heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+
+      h2 {
+        @include heading;
+
+        span {
+          @include colored(#C32C2C);
+        }
+      }
+    }
+
+    h3 {
+      @include description;
+    }
+  }
+}

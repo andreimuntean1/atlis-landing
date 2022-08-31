@@ -1,0 +1,19 @@
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 10px 0;
+    
+    ul.navigation {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    .logo {
+      h5 {
+        display: none;
+      }
+    }
+  }
+}

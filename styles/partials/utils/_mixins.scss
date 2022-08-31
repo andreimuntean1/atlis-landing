@@ -1,0 +1,91 @@
+@mixin button($background, $color) {
+  font-family: $sora;
+  font-size: 20px;
+  background: $background;
+  color: $color;
+  padding: 8px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: .35s background, .35s color;
+
+  &:hover {
+    background: darken($color: $color, $amount: 15);
+    color: $background;
+  }
+
+  @media screen and (max-width: 600px) {
+    & {
+      font-size: 18px;
+    }
+  }
+}
+
+@mixin heading {
+  font-family: $sora;
+  font-weight: $bold;
+  font-size: 36px;
+
+  @media screen and (max-width: 600px) {
+    & {
+      font-size: 30px;
+    }
+  }
+}
+
+@mixin colored($color) {
+  background: $color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+@mixin description {
+  font-family: $sora;
+  font-weight: $semi-bold;
+  font-size: 24px;
+  color: #8C8C8C;
+
+  @media screen and (max-width: 600px) {
+    & {
+      font-size: 20px;
+    }
+  }
+}
+
+@mixin form {
+  width: 100%;
+  background: #D9D9D9;
+  padding: 15px 20px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Sora', sans-serif;
+    font-weight: $semi-bold;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 600px) {
+    input {
+      font-size: 16px;
+    }
+  }
+
+  button {
+    @include button(black, white);
+  }
+}
+
+@mixin credits {
+  // margin: 75px 0;
+  font-family: 'Sora';
+  font-weight: $semi-bold;
+  font-size: 18px;
+  color: #8C8C8C;
+  text-align: center;
+}

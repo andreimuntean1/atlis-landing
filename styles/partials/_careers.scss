@@ -1,0 +1,38 @@
+main {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .careers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  
+    h1 {
+      @include heading;
+      text-align: center;
+    }
+  
+    a {
+      font-family: 'Sora';
+      font-weight: $semi-bold;
+      font-size: 22px;
+      color: $gray;
+      text-decoration: underline;
+      transition: color .25s;
+
+      &:hover {
+        color: darken($color: $gray, $amount: 20)
+      }
+    }
+  }
+
+  h6 {
+    @include credits;
+    margin-bottom: -20px;
+  }
+}

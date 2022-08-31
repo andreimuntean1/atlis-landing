@@ -1,0 +1,15 @@
+@media screen and (max-width: 1500px) {
+  .cards {
+    .grid {
+      margin-left: 0;
+  
+      .group {
+        flex-direction: column;
+  
+        .card {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

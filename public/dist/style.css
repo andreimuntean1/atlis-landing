@@ -1,0 +1,747 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Sora";
+  font-weight: 600;
+  src: url("/assets/fonts/Sora-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Sora";
+  font-weight: 700;
+  src: url("/assets/fonts/Sora-Bold.ttf");
+}
+body {
+  padding: 20px 70px;
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+main .careers-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .careers-content h1 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  main .careers-content h1 {
+    font-size: 30px;
+  }
+}
+main .careers-content a {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 22px;
+  color: #7A93B1;
+  text-decoration: underline;
+  transition: color 0.25s;
+}
+main .careers-content a:hover {
+  color: #49607c;
+}
+main h6 {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 18px;
+  color: #8C8C8C;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .logo img {
+  width: 40px;
+  height: 40px;
+}
+.header .logo h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.header ul.navigation {
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+}
+.header ul.navigation li:hover {
+  -webkit-animation: bounce 1s infinite ease-in-out;
+          animation: bounce 1s infinite ease-in-out;
+}
+.header ul.navigation li a {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header button {
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: 0.35s background, 0.35s color;
+}
+.header button:hover {
+  background: #d9d9d9;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .header button {
+    font-size: 18px;
+  }
+}
+
+.hero {
+  width: 100%;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero img.hero-img {
+  width: 100%;
+  max-width: 2160px;
+}
+.hero .hero-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.hero .hero-content .heading {
+  max-width: 500px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.hero .hero-content .heading img.star {
+  width: 40px;
+  height: 40px;
+}
+.hero .hero-content .heading h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-content .heading h2 {
+    font-size: 30px;
+  }
+}
+.hero .hero-content .heading h2 span {
+  background: radial-gradient(50% 50% at 50% 50%, #0066FF 0%, #4B93FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .hero-content .heading img.arrow {
+  width: 450px;
+  height: 88px;
+  position: absolute;
+  top: 120px;
+  left: 360px;
+}
+.hero .hero-content .join-waitlist {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.hero .hero-content .join-waitlist h3 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-content .join-waitlist h3 {
+    font-size: 20px;
+  }
+}
+.hero .hero-content .join-waitlist .form {
+  width: 100%;
+  background: #D9D9D9;
+  padding: 15px 20px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero .hero-content .join-waitlist .form input {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-content .join-waitlist .form input {
+    font-size: 16px;
+  }
+}
+.hero .hero-content .join-waitlist .form button {
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: 0.35s background, 0.35s color;
+}
+.hero .hero-content .join-waitlist .form button:hover {
+  background: #d9d9d9;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-content .join-waitlist .form button {
+    font-size: 18px;
+  }
+}
+
+.main-card {
+  background: #EDEDED;
+  margin-top: 10em;
+  border-radius: 40px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-card image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-card image img {
+  width: 100%;
+  height: auto;
+}
+.main-card .text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.main-card .text .heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.main-card .text .heading h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+@media screen and (max-width: 600px) {
+  .main-card .text .heading h2 {
+    font-size: 30px;
+  }
+}
+.main-card .text .heading h2 span {
+  background: #C32C2C;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-card .text h3 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+}
+@media screen and (max-width: 600px) {
+  .main-card .text h3 {
+    font-size: 20px;
+  }
+}
+
+.cards {
+  margin-top: 12em;
+}
+.cards h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  max-width: 500px;
+}
+@media screen and (max-width: 600px) {
+  .cards h2 {
+    font-size: 30px;
+  }
+}
+.cards h2 span {
+  background: #7A93B1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards .grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: -70px;
+}
+.cards .grid .group {
+  display: flex;
+  gap: 30px;
+}
+.cards .grid .group .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: #EDEDED;
+}
+.cards .grid .group .card:last-of-type {
+  justify-content: center;
+}
+.cards .grid .group .card h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+@media screen and (max-width: 600px) {
+  .cards .grid .group .card h2 {
+    font-size: 30px;
+  }
+}
+.cards .grid .group .card h2.threads {
+  background: linear-gradient(180deg, #F93B3B 0%, #9C06C2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards .grid .group .card h2.communities {
+  background: linear-gradient(180deg, #3B92F9 0%, #060DC2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards .grid .group .card img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-showcase {
+  margin-top: 12em;
+}
+.profile-showcase h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  max-width: 550px;
+}
+@media screen and (max-width: 600px) {
+  .profile-showcase h2 {
+    font-size: 30px;
+  }
+}
+.profile-showcase h2 span {
+  background: #7A93B1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-showcase img {
+  width: 100%;
+  height: auto;
+  margin-left: -70px;
+}
+
+.contact {
+  margin-top: 12em;
+}
+.contact h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+@media screen and (max-width: 600px) {
+  .contact h2 {
+    font-size: 30px;
+  }
+}
+.contact p {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+  max-width: 850px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .contact p {
+    font-size: 20px;
+  }
+}
+.contact form {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 2160px;
+  display: flex;
+  flex-direction: column;
+}
+.contact form label {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+  color: black;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .contact form label {
+    font-size: 20px;
+  }
+}
+.contact form input {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+  font-size: 20px;
+  outline: none;
+  border: 3px solid #B7C9DD;
+  padding: 15px 8px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0px 4px 9px rgba(183, 201, 221, 0.35));
+}
+@media screen and (max-width: 600px) {
+  .contact form input {
+    font-size: 20px;
+  }
+}
+.contact form input::-moz-placeholder {
+  color: #7A93B1;
+}
+.contact form input:-ms-input-placeholder {
+  color: #7A93B1;
+}
+.contact form input::placeholder {
+  color: #7A93B1;
+}
+.contact form input[type=submit] {
+  background-color: #107EFF;
+  color: white;
+  cursor: pointer;
+  border: 3px solid #0A2F5A;
+  box-shadow: 0px 4px 8px rgba(16, 126, 255, 0.3);
+  border-radius: 5px;
+}
+.contact form input[type=submit]:hover {
+  background-color: #0065dc;
+}
+.contact form textarea {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+  font-size: 20px;
+  min-height: 250px;
+  resize: none;
+  outline: none;
+  border: 3px solid #B7C9DD;
+  padding: 15px 8px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0px 4px 9px rgba(183, 201, 221, 0.35));
+}
+@media screen and (max-width: 600px) {
+  .contact form textarea {
+    font-size: 20px;
+  }
+}
+.contact form textarea::-moz-placeholder {
+  color: #7A93B1;
+}
+.contact form textarea:-ms-input-placeholder {
+  color: #7A93B1;
+}
+.contact form textarea::placeholder {
+  color: #7A93B1;
+}
+
+.footer {
+  margin-top: 10em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer h2 {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 600px) {
+  .footer h2 {
+    font-size: 30px;
+  }
+}
+.footer p {
+  font-family: "Sora", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #8C8C8C;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .footer p {
+    font-size: 20px;
+  }
+}
+.footer .form {
+  width: 100%;
+  background: #D9D9D9;
+  padding: 15px 20px;
+  border-radius: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .form input {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media screen and (max-width: 600px) {
+  .footer .form input {
+    font-size: 16px;
+  }
+}
+.footer .form button {
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: 0.35s background, 0.35s color;
+}
+.footer .form button:hover {
+  background: #d9d9d9;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .footer .form button {
+    font-size: 18px;
+  }
+}
+.footer button.careers {
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 20px;
+  background: #107EFF;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: 0.35s background, 0.35s color;
+  padding: 18px 15px;
+  margin-top: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+.footer button.careers:hover {
+  background: #d9d9d9;
+  color: #107EFF;
+}
+@media screen and (max-width: 600px) {
+  .footer button.careers {
+    font-size: 18px;
+  }
+}
+.footer h6 {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 18px;
+  color: #8C8C8C;
+  text-align: center;
+  margin: 75px 0 15px 0;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header ul.navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .logo h5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .hero .hero-content .heading img.arrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .hero .hero-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .hero .hero-content .heading {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero .hero-content .heading img.star {
+    display: none;
+  }
+  .hero .hero-content .join-waitlist h3 {
+    max-width: 100%;
+  }
+  .hero .hero-content .join-waitlist .form {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero img.hero-img {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .main-card {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .main-card .text .heading {
+    text-align: center;
+  }
+  .main-card .text .heading img {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-card {
+    background: none;
+    flex-direction: column-reverse;
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .cards .grid {
+    margin-left: 0;
+  }
+  .cards .grid .group {
+    flex-direction: column;
+  }
+  .cards .grid .group .card {
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .profile-showcase img {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact form input {
+    padding: 10px 8px;
+  }
+  .contact form input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact form input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact form input::placeholder {
+    font-size: 16px;
+  }
+  .contact form input[type=submit] {
+    font-size: 18px;
+  }
+  .contact form textarea {
+    padding: 10px 8px;
+  }
+  .contact form textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact form textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact form textarea::placeholder {
+    font-size: 16px;
+  }
+}

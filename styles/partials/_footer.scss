@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 10em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  h2 {
+    @include heading;
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  p {
+    @include description;
+    max-width: $max-width;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    @include form;
+  }
+
+  button.careers {
+    @include button($blue, white);
+    padding: 18px 15px;
+    margin-top: 10px;
+    max-width: $max-width;
+    width: 100%;
+  }
+
+  h6 {
+    @include credits;
+    margin: 75px 0 15px 0;
+  }
+}
