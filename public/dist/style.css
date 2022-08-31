@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 * a {
   color: inherit;
@@ -141,6 +142,18 @@ main h6 {
   background: #d9d9d9;
   color: black;
 }
+.header button.joined {
+  padding: 8px 25px;
+  background: #00AB66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.header button.joined:hover {
+  background: #00AB66;
+  color: white;
+}
 @media screen and (max-width: 600px) {
   .header button {
     font-size: 18px;
@@ -249,6 +262,18 @@ main h6 {
 .hero .hero-content .join-waitlist .form button:hover {
   background: #d9d9d9;
   color: black;
+}
+.hero .hero-content .join-waitlist .form button.joined {
+  padding: 8px 25px;
+  background: #00AB66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.hero .hero-content .join-waitlist .form button.joined:hover {
+  background: #00AB66;
+  color: white;
 }
 @media screen and (max-width: 600px) {
   .hero .hero-content .join-waitlist .form button {
@@ -564,6 +589,7 @@ main h6 {
   border-radius: 200px;
   display: flex;
   justify-content: space-between;
+  max-width: 500px;
 }
 .footer .form input {
   background: none;
@@ -593,12 +619,27 @@ main h6 {
   background: #d9d9d9;
   color: black;
 }
+.footer .form button.joined {
+  padding: 8px 25px;
+  background: #00AB66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.footer .form button.joined:hover {
+  background: #00AB66;
+  color: white;
+}
 @media screen and (max-width: 600px) {
   .footer .form button {
     font-size: 18px;
   }
 }
-.footer button.careers {
+.footer a {
+  max-width: 500px;
+}
+.footer a button.careers {
   font-family: "Sora", system-ui, sans-serif;
   font-size: 20px;
   background: #107EFF;
@@ -608,17 +649,28 @@ main h6 {
   cursor: pointer;
   border: none;
   transition: 0.35s background, 0.35s color;
+  width: 100%;
   padding: 18px 15px;
   margin-top: 10px;
-  max-width: 500px;
-  width: 100%;
 }
-.footer button.careers:hover {
+.footer a button.careers:hover {
   background: #d9d9d9;
   color: #107EFF;
 }
+.footer a button.careers.joined {
+  padding: 8px 25px;
+  background: #00AB66;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.footer a button.careers.joined:hover {
+  background: #00AB66;
+  color: white;
+}
 @media screen and (max-width: 600px) {
-  .footer button.careers {
+  .footer a button.careers {
     font-size: 18px;
   }
 }

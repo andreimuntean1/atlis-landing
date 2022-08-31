@@ -20,14 +20,18 @@
 
   .form {
     @include form;
+    max-width: $max-width;
   }
 
-  button.careers {
-    @include button($blue, white);
-    padding: 18px 15px;
-    margin-top: 10px;
+  a {
     max-width: $max-width;
-    width: 100%;
+    
+    button.careers {
+      @include button($blue, white);
+      width: 100%;
+      padding: 18px 15px;
+      margin-top: 10px;
+    }
   }
 
   h6 {

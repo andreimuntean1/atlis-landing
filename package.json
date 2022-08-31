@@ -1,13 +1,17 @@
 {
   "name": "atlis-landing",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Atlis landing page",
+  "main": "app.js",
   "scripts": {
     "dev": "node app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["atlis", "landing page"],
+  "author": {
+    "email": "account@andreimuntean.dev",
+    "name": "Andrei Muntean",
+    "url": "https://github.com/andreimuntean1"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
