@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/icon-dark.svg"
+      type="image/svg"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/icon-light.svg"
+      type="image/svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="stylesheet" href="/styles/style.min.css" />
+    <script src="/js/loading.js" defer></script>
+    <script src="/js/mobile.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <title>Atlis</title>
+  </head>
+  <body>
+    <div class="loader"><span></span></div>
+    <div class="overlay"></div>
+    <header>
+      <div class="logo">
+        <img src="/assets/icons/icon-light.svg" alt="Black Atlis icon" />
+        <h5>Atlis</h5>
+      </div>
+      <ul role="navigation">
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="https://discord.gg/DCmQFR7d9h">Discord</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+      <a href="#">Subscribe to waitlist</a>
+      <button><img src="/assets/icons/mobile-nav.svg" alt="Navigation" /></button>
+      <div class="mobile-nav" aria-expanded="false">
+        <img src="/assets/icons/close.svg" alt="Close navigation menu" />
+        <ul role="navigation">
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="https://discord.gg/DCmQFR7d9h">Discord</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+        <a href="#">Subscribe to waitlist</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="content">
+          <h1>Share projects,<br />make <span>impact</span></h1>
+          <p>
+            Atlis is a social media platform that allows artists to share and showcase their creative works, connect
+            with fellow artists, and receive recognition for their talents. It is a place for artists to connect and
+            engage with a community of like-minded individuals.
+          </p>
+          <div class="subscribe">
+            <input type="text" placeholder="john@doe.com" />
+            <button>
+              <img src="/assets/icons/tick.svg" alt="White tick on blue background" />
+            </button>
+          </div>
+        </div>
+        <img
+          src="/assets/images/community.svg"
+          alt="3 Atlis users and their brief description"
+          class="community"
+          loading="eager"
+        />
+        <img
+          src="/assets/images/socials.svg"
+          alt="Social links of a user called 'Buildergroop'"
+          class="socials"
+          loading="eager"
+        />
+      </section>
+      <img
+        src="/assets/images/screenshot.svg"
+        alt="Screenshot of Atlis feed for a logged in user named Alexander L. The focused post talks about an updates Swift course"
+      />
+      <section class="details">
+        <img src="/assets/icons/content.svg" alt="Content icon" class="icon" />
+        <p class="subtitle">Created for exposure</p>
+        <h2>Your content, your way.</h2>
+        <p class="description">
+          Atlis provide the ability to give titles, embed links, images, descriptions and tags. It also support your
+          favourite actions such as saving posts, reposting them and of course commenting
+        </p>
+        <div class="images">
+          <img src="/assets/images/new-thread.svg" alt="Create new thread" />
+          <img src="/assets/images/post.svg" alt="An post about Elon Musk buying Twitter" />
+        </div>
+      </section>
+      <section class="details">
+        <img src="/assets/icons/network-feature.svg" alt="Network icon" class="icon" />
+        <p class="subtitle">Created for influence</p>
+        <h2>Networks</h2>
+        <p class="description">
+          Before you realise it, you'll grow exponentially in whatever you're doing and reach new heights effortlessly
+        </p>
+        <div class="recommended">
+          <div class="text">
+            <h3>Reccomending what's interesting to you</h3>
+            <p class="description">
+              On Atlis, the feed on your home page is made of posts from people you follow and resources that are
+              relevant to your goals.
+            </p>
+          </div>
+          <div class="communities">
+            <img src="/assets/images/community-buildergroop.svg" alt="Buildergroop community" />
+            <img src="/assets/images/community-roblox.svg" alt="Roblox community" />
+          </div>
+        </div>
+      </section>
+      <section class="details">
+        <img src="/assets/icons/network-feature.svg" alt="Features icon" class="icon" />
+        <p class="subtitle">Created for convenience</p>
+        <h2>More features</h2>
+        <div>
+          <div class="accordion">
+            <details>
+              <summary>
+                <div>
+                  <img src="/assets/icons/spider.svg" alt="Spider icon" class="accordion-icon" />
+                  Powered by threads
+                </div>
+                <img src="/assets/icons/arrow.svg" alt="Arrow" class="arrow" />
+              </summary>
+              <p>Atlis provide threads where people can show their affection towards your work and suggest changes</p>
+            </details>
+            <hr />
+            <details>
+              <summary>
+                <div>
+                  <img src="/assets/icons/community.svg" alt="Community icon" class="accordion-icon" />
+                  Join communities
+                </div>
+                <img src="/assets/icons/arrow.svg" alt="Arrow" class="arrow" />
+              </summary>
+              <p>Atlis provide threads where people can show their affection towards your work and suggest changes</p>
+            </details>
+            <hr />
+            <details>
+              <summary>
+                <div>
+                  <img src="/assets/icons/network.svg" alt="Network icon" class="accordion-icon" />
+                  Network with others
+                </div>
+                <img src="/assets/icons/arrow.svg" alt="Arrow" class="arrow" />
+              </summary>
+              <p>Atlis provide threads where people can show their affection towards your work and suggest changes</p>
+            </details>
+            <hr />
+            <details>
+              <summary>
+                <div>
+                  <img src="/assets/icons/message.svg" alt="Message icon" class="accordion-icon" />
+                  Message people
+                </div>
+                <img src="/assets/icons/arrow.svg" alt="Arrow" class="arrow" />
+              </summary>
+              <p>Atlis provide threads where people can show their affection towards your work and suggest changes</p>
+            </details>
+          </div>
+          <img src="/assets/images/homepage-post.svg" alt="An open post on Atlis homepage" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h2>
+          Shaping generations <br />
+          one step at a time
+        </h2>
+        <p>
+          We have a wealth of resources to help you develop professionally and push your career forward. If you’re
+          passionate about what you do, then we would love to work with you!
+        </p>
+        <a href="/careers">Careers</a>
+        <p class="end-note">built with innovation by the atlis team ❤️</p>
+      </div>
+    </footer>
+  </body>
+</html>

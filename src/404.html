@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/icon-dark.svg"
+      type="image/svg"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/icon-light.svg"
+      type="image/svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="stylesheet" href="/styles/404.min.css" />
+    <title>Oops, not found</title>
+  </head>
+  <body>
+    <div class="loader"><span></span></div>
+    <main>
+      <div>
+        <h1>404</h1>
+        <h2>Oops!</h2>
+        <h2>Something's missing</h2>
+        <p>Oops, looks like the page you requested was either deleted or never existed.</p>
+        <button onclick="history.back()">Go back</button>
+      </div>
+      <img src="/assets/images/404.svg" alt="" />
+    </main>
+    <img src="/assets/images/clouds/cloud1.svg" alt="Cloud" />
+    <img src="/assets/images/clouds/cloud2.svg" alt="Cloud" />
+    <img src="/assets/images/clouds/cloud3.svg" alt="Cloud" />
+    <img src="/assets/images/clouds/cloud4.svg" alt="Cloud" />
+    <img src="/assets/images/clouds/cloud5.svg" alt="Cloud" />
+  </body>
+  <script>
+    document.fonts.ready.then(() => (document.querySelector(".loader").style.display = "none"));
+  </script>
+</html>

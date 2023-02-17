@@ -1,0 +1,26 @@
+{
+	"name": "atlis-landing-page",
+	"version": "1.0.0",
+	"description": "The landing page for the future Atlis project",
+	"main": "server.js",
+	"scripts": {
+		"dev": "node ./src/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/atlisapp/Landing.git"
+	},
+	"keywords": [
+		"atlis"
+	],
+	"author": "Andrei Muntean",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/atlisapp/Landing/issues"
+	},
+	"homepage": "https://github.com/atlisapp/Landing#readme",
+	"dependencies": {
+		"express": "^4.18.2",
+		"path": "^0.12.7"
+	}
+}
